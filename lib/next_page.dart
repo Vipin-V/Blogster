@@ -7,7 +7,7 @@ class NextPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Crypto"),
+        title: const Text("Crypto"),
       ),
     );
   }

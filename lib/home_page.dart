@@ -12,17 +12,25 @@ class HomePage extends StatefulWidget {
 }
 
 class _HomePageState extends State<HomePage> {
-Color backgroundColor = Colors.white;
+  Color oldBackgroundColor = Colors.white;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backgroundColor,
+      backgroundColor: oldBackgroundColor,
       //! Top Bar Section
       appBar: AppBar(
         actions: [
           IconButton(
-            onPressed: () {},
+            onPressed: () {
+              setState(() {
+                if (oldBackgroundColor == Colors.white) {
+                  oldBackgroundColor = Colors.red;
+                } else {
+                  oldBackgroundColor = Colors.white;
+                }
+              });
+            },
             icon: const Icon(
               Icons.color_lens,
             ),
@@ -129,7 +137,7 @@ Color backgroundColor = Colors.white;
                         );
                       },
                       style: ElevatedButton.styleFrom(
-                        shape: StadiumBorder(),
+                        shape: const StadiumBorder(),
                       ),
                       child: const Text("Bitcoin"),
                     ),
