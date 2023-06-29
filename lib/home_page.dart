@@ -1,24 +1,34 @@
 import 'package:flutter/material.dart';
 import 'package:my_first_app/about.dart';
 import 'package:my_first_app/description_page.dart';
-import 'package:my_first_app/description_page2.dart';
-import 'package:my_first_app/description_page3.dart';
-import 'package:my_first_app/description_page4.dart';
-import 'package:my_first_app/description_page5.dart';
-import 'package:my_first_app/description_page6.dart';
 import 'package:my_first_app/main.dart';
 import 'package:my_first_app/next_page.dart';
 
-class HomePage extends StatelessWidget {
+class HomePage extends StatefulWidget {
   const HomePage({super.key});
+
+  @override
+  State<HomePage> createState() => _HomePageState();
+}
+
+class _HomePageState extends State<HomePage> {
+Color backgroundColor = Colors.white;
 
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.white,
+      backgroundColor: backgroundColor,
       //! Top Bar Section
       appBar: AppBar(
-        title: Text("Home"),
+        actions: [
+          IconButton(
+            onPressed: () {},
+            icon: const Icon(
+              Icons.color_lens,
+            ),
+          )
+        ],
+        title: const Text("Home"),
       ),
       drawer: SafeArea(
         child: Drawer(
@@ -153,7 +163,10 @@ class HomePage extends StatelessWidget {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (BuildContext context) {
-                        return const DescriptionPage();
+                        return const DescriptionPage(
+                          title: 'World Tour',
+                          imagePath: 'images/image1.png',
+                        );
                       },
                     ),
                   );
@@ -194,7 +207,10 @@ class HomePage extends StatelessWidget {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (BuildContext context) {
-                        return const DescriptionPage2();
+                        return const DescriptionPage(
+                          title: 'Crypto Hike',
+                          imagePath: 'images/image2.png',
+                        );
                       },
                     ),
                   );
@@ -235,7 +251,10 @@ class HomePage extends StatelessWidget {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (BuildContext context) {
-                        return const DescriptionPage3();
+                        return const DescriptionPage(
+                          title: 'Lost Friends',
+                          imagePath: 'images/image3.png',
+                        );
                       },
                     ),
                   );
@@ -276,7 +295,10 @@ class HomePage extends StatelessWidget {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (BuildContext context) {
-                        return const DescriptionPage4();
+                        return const DescriptionPage(
+                          title: 'Indore Households',
+                          imagePath: 'images/image4.png',
+                        );
                       },
                     ),
                   );
@@ -317,7 +339,10 @@ class HomePage extends StatelessWidget {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (BuildContext context) {
-                        return const DescriptionPage5();
+                        return const DescriptionPage(
+                          title: 'Social Delima',
+                          imagePath: 'images/image5.png',
+                        );
                       },
                     ),
                   );
@@ -358,7 +383,10 @@ class HomePage extends StatelessWidget {
                   Navigator.of(context).push(
                     MaterialPageRoute(
                       builder: (BuildContext context) {
-                        return const DescriptionPage6();
+                        return const DescriptionPage(
+                          title: 'Ai Takeovers!',
+                          imagePath: 'images/image6.png',
+                        );
                       },
                     ),
                   );
