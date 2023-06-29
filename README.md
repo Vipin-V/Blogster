@@ -1,6 +1,6 @@
-# my_first_app
+# Blogster
 
-A new Flutter project.
+A Blog App build using Flutter.
 
 ## Getting Started
 
