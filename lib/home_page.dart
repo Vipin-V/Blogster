@@ -16,6 +16,7 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Colors.white,
+      //! Top Bar Section
       appBar: AppBar(
         title: Text("Home"),
       ),
@@ -146,6 +147,7 @@ class HomePage extends StatelessWidget {
                   ],
                 ),
               ),
+              //! First Description Box
               GestureDetector(
                 onTap: () {
                   Navigator.of(context).push(
@@ -186,6 +188,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
+              //! Second Description Box
               GestureDetector(
                 onTap: () {
                   Navigator.of(context).push(
@@ -226,6 +229,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
+              //! Third Description Box
               GestureDetector(
                 onTap: () {
                   Navigator.of(context).push(
@@ -266,6 +270,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
+              //! Fourth Discription Box
               GestureDetector(
                 onTap: () {
                   Navigator.of(context).push(
@@ -306,6 +311,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
+              //! Fifth Description Box
               GestureDetector(
                 onTap: () {
                   Navigator.of(context).push(
@@ -346,6 +352,7 @@ class HomePage extends StatelessWidget {
                   ),
                 ),
               ),
+              //! Sixth Description Box
               GestureDetector(
                 onTap: () {
                   Navigator.of(context).push(
