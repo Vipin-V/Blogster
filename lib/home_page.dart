@@ -122,6 +122,7 @@ class _HomePageState extends State<HomePage> {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue,
                         shape: const StadiumBorder(),
                       ),
                       child: const Text("Submerine"),
@@ -137,6 +138,7 @@ class _HomePageState extends State<HomePage> {
                         );
                       },
                       style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue,
                         shape: const StadiumBorder(),
                       ),
                       child: const Text("Bitcoin"),
@@ -144,6 +146,7 @@ class _HomePageState extends State<HomePage> {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue,
                         shape: const StadiumBorder(),
                       ),
                       child: const Text("Stock Market"),
@@ -151,6 +154,7 @@ class _HomePageState extends State<HomePage> {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue,
                         shape: const StadiumBorder(),
                       ),
                       child: const Text("Books"),
@@ -158,6 +162,7 @@ class _HomePageState extends State<HomePage> {
                     ElevatedButton(
                       onPressed: () {},
                       style: ElevatedButton.styleFrom(
+                        backgroundColor: Colors.blue,
                         shape: const StadiumBorder(),
                       ),
                       child: const Text("Evil Corp"),
